@@ -116,7 +116,6 @@ function ComputeAndDisplayStats() {
     $("#contador1").text(totalLikes);
     $("#contador2").text(totalDislikes);
 }
- 
 
 /*
 this.counter = function () {
