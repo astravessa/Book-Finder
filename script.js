@@ -12,6 +12,7 @@ $('#buttonLike').click(function () {
     if (library.nextBook() === false) {
         $('#mainPage').hide();
         $("#endPage").show();
+        ComputeAndDisplayStats();
     }
 });
 
@@ -20,6 +21,7 @@ $('#buttonDislike').click(function () {
     if (library.nextBook() === false) {
         $('#mainPage').hide();
         $("#endPage").show();
+        ComputeAndDisplayStats();
     }
 });
 
@@ -73,13 +75,6 @@ function Library() {
     this.dislike = function () {
         this.atualBook.dislike++;
     }
-    this.counter = function () {
-        var total = 0;
-        for (var i = 0; i < this.books.length; i++) {
-            total += this.books[i].like;
-        }
-        return total
-    }
 }
 
 var book1 = new Book("https://s-media-cache-ak0.pinimg.com/736x/14/48/2d/14482d1a8a817be7298eb6b65da0258b--marvel-comic-books-marvel-comics.jpg", "Captain Marvel", "Shazam, conhecido como Capitão Marvel até 2011, é um super-herói fictício de histórias em quadrinhos, inicialmente publicado pela editora Fawcett Comics e posteriormente adquirido pela DC Comics.", "https://www.google.com", "https://www.amazon.com");
@@ -95,6 +90,43 @@ library.addBook(book3);
 
 library.nextBook();
 
+function ComputeAndDisplayStats() {
+    var totalLikes = 0;
+    var totalDislikes = 0;
+
+    var book;
+    while ((book = library.booksviewed.dequeue()) !== undefined) {
+        totalLikes += book.like;
+        totalDislikes += book.dislike;
+
+        var html = "<tr>";
+        html += "<td>";
+        html += book.title;
+        html += "</td>";
+        html += "<td>";
+        html += book.like;
+        html += "</td>";
+        html += "<td>";
+        html += book.dislike;
+        html += "</td>";
+        html += "</tr>";
+        $('#tbody').append(html);
+    }
+
+    $("#contador1").text(totalLikes);
+    $("#contador2").text(totalDislikes);
+}
+ 
+
+/*
+this.counter = function () {
+        var total = 0;
+        for (var i = 0; i < this.books.length; i++) {
+            total += this.books[i].like;
+        }
+        return total
+    }
+*/
 
 //$('#likes').text(like);
 //$('#dislikes').text(dislike);
