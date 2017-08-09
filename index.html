@@ -9,17 +9,33 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/arthursucks/opencomicfont/master/opencomicfont.css">
 </head>
 
 <body>
 	<div id="header">
 		<img src="http://www.housethehomeless.org/wp-content/uploads/2009/12/wow.png?x58946" width="350" height="100" alt="Stage &amp; Screen"
 		 class="logo" />
-		<span class="slogan">Livros de Banda Desenhada</span>
+		<span class="opencomicfont">Livros de Banda Desenhada</span>
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Zap-logo.svg/2000px-Zap-logo.svg.png" width="350" height="100"
 		 alt="Stage &amp; Screen" class="boom" />
 	</div>>
-	<nav id="menu">
+
+
+	<nav id="topnav">
+		<div class="inner">
+			<a href="/" class="left logo"><img src="//dl.dropboxusercontent.com/u/55861319/icons/genius.png"></a>
+			<div class="left nav">
+				<ul>
+					<li><a>Superheroes</a></li>
+					<li><a>Villains</a></li>
+					<li><a>Damsels</a></li>
+					<li class="action"><a class="btn btn-small">More...</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--<nav id="menu">
 		<ul>
 			<li><a href="#">NOVIDADES</a></li>
 			<li><a href="#">LEITURAS</a></li>
@@ -27,7 +43,7 @@
 			<li><a href="#">AUTORES</a></li>
 			<li><a href="#">OUTROS</a></li>
 		</ul>
-	</nav>
+	</nav>-->
 
 	<div class="container-fluid">
 		<div id="startPage" class="row">
@@ -74,25 +90,23 @@
 		<h1>MORE COMING SOON...</h1>
 
 		<table id="tableBooks">
-            <thead>
-                <tr>
-                    <td>Book</td>
-                    <td>Likes</td>
-                    <td>Dislikes</td>
-                </tr>
-            </thead>
-            <tbody id="tbody">
+			<thead>
+				<tr>
+					<td>Book</td>
+					<td>Likes</td>
+					<td>Dislikes</td>
+				</tr>
+			</thead>
+			<tbody id="tbody">
 
-            </tbody>
-        </table>
+			</tbody>
+		</table>
 
-        <br>
+		<br>
 
-        <label>Total de Likes: </label><label id="contador1"></label>
-        <br>
-        <label>Total de Dislikes: </label><label id="contador2"></label>
-
-
+		<label>Total de Likes: </label><label id="contador1"></label>
+		<br>
+		<label>Total de Dislikes: </label><label id="contador2"></label>
 	</div>
 
 	</div>
