@@ -57,7 +57,6 @@ function Library() {
     this.books = new Queue();  //[]; //estamos a inicializar a nossa biblioteca, books é a variavel - this. é uma variável
     this.booksviewed = new Queue();
     this.atualBook = null;
-    //this.index = 0;
     this.addBook = function (book) { //depois vamos iniciar o método, como adicionar um livro a biblioteca
         this.books.enqueue(book); //buscar do arrays
     }
@@ -70,11 +69,9 @@ function Library() {
     }
     this.like = function () {
         this.atualBook.like++;
-        this.nextBook();
     }
     this.dislike = function () {
         this.atualBook.dislike++;
-        this.nextBook();
     }
     this.counter = function () {
         var total = 0;
