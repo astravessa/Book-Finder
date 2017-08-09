@@ -1,0 +1,200 @@
+#startPage button {
+    text-align: center;
+    bottom: -50;
+    margin-left:40%;
+    margin-right:60%;
+}
+
+#startPage h1{
+    color: white;
+    font-size: 450%;
+    text-align: center;
+}
+
+#startPage img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+border-top: 1px solid #778899;
+border-bottom: 1px dotted #B2BCC6;
+height: 10em;
+}
+
+#header .slogan {
+font: 40px Georgia, 'Times New Roman', Times, serif;
+color: yellow;
+background-color: transparent;
+float: left;
+width: 500px;
+margin-right: 3em;
+margin-top: 1em;
+}
+
+#header .logo {
+float: left;
+width: 187px;
+margin-left: 1.5em;
+margin-top: 0.5em;
+}
+
+#header .boom {
+float: right;
+width: 187px;
+margin-left: 1.5em;
+margin-top: 0.5em;
+}
+
+#botoes{
+    text-align: center;
+}
+
+body {
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.6) 100%), url("http://1.bp.blogspot.com/-9Q9jNvfFE04/VDgpkQVu8fI/AAAAAAAAKfk/URm8pF2OoiM/s1600/Frank%2BGodwin%2B2.jpg");
+    background-color: #cccccc;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color:white;
+}
+
+#body{
+    background-image: url("http://1.bp.blogspot.com/-9Q9jNvfFE04/VDgpkQVu8fI/AAAAAAAAKfk/URm8pF2OoiM/s1600/Frank%2BGodwin%2B2.jpg");
+    opacity: 0.6;
+}
+
+#mainPage {
+    text-align: center;
+    vertical-align: top;
+    font-family: 'arial';
+    font-size: 100%;
+    display: none;
+}
+
+#mainPage .edicao {
+    background: white;
+}
+
+#mainPage{
+    display: none;
+}
+
+#bookContainer{
+    display: block;
+}
+
+.active{
+    display: block;
+
+}    
+
+#endpage{
+    display:none;
+}
+
+#endpage img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#endPage h1{
+    color: white;
+    font-size: 450%;
+    text-align: center;
+}
+
+#image{
+    height: 400px;
+    width: 65%;
+    margin: 20px;
+}
+
+#title{
+    font-size: 25px;
+    color: black;
+
+
+}
+#description{
+    color: grey;
+} 
+
+#menu ul {
+    padding:20px;
+    margin:0px;
+    background-color:grey;
+    list-style:none;
+}
+#menu ul li { display: inline; }
+
+#menu ul li a {
+    padding: 10px 95px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    border-bottom:3px solid yellow;
+}
+
+#menu ul li a:hover {
+			background-color:#D6D6D6;
+			color: #6D6D6D;
+			border-bottom:3px solid #EA0000;
+		}
+
+header{
+    background-color: black;
+    color:white;
+    font-size: 15px;
+    letter-spacing: 5px;
+    text-shadow: 3px 2px red;
+    text-decoration: none;
+    padding:20px;
+    margin:0px;
+    
+}
+
+
+table {
+    border-collapse: collapse;
+    border: 1px solid white;
+    color: white;
+    width: 500px;
+    padding: 15px;
+    text-align: center;
+}
+
+tr, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid white;
+}
+
+thead {
+    background-color: yellow;
+    color: black;
+    border: 1px solid white;
+}
+
+tbody{
+    background-color:gray;
+    color: white;
+    border: 1px solid white;
+}
+
+#contador{
+    color: white;
+    text-align: center;
+}
+
+#contador .p{
+    font: 40px Georgia, 'Times New Roman', Times, serif;
+}
